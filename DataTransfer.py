@@ -23,20 +23,74 @@ def index():
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>File Transfer</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                text-align: center;
+            }
+            .container {
+                max-width: 800px;
+                margin: 50px auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h1 {
+                color: #333;
+            }
+            form {
+                margin: 20px 0;
+            }
+            input[type="file"] {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            input[type="submit"] {
+                padding: 10px 20px;
+                border: none;
+                background-color: #28a745;
+                color: #fff;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #218838;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            li {
+                margin: 10px 0;
+            }
+            a {
+                text-decoration: none;
+                color: #007bff;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
     </head>
     <body>
-        <h1>File Transfer App</h1>
-        <h2>Upload a new file</h2>
-        <form action="/upload" method="post" enctype="multipart/form-data">
-            <input type="file" name="file">
-            <input type="submit" value="Upload">
-        </form>
-        <h2>Available Files</h2>
-        <ul>
-            {% for file in files %}
-            <li><a href="{{ url_for('uploaded_file', filename=file) }}">{{ file }}</a></li>
-            {% endfor %}
-        </ul>
+        <div class="container">
+            <h1>File Transfer App</h1>
+            <h2>Upload a new file</h2>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="file">
+                <input type="submit" value="Upload">
+            </form>
+            <h2>Available Files</h2>
+            <ul>
+                {% for file in files %}
+                <li><a href="{{ url_for('uploaded_file', filename=file) }}">{{ file }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
     </body>
     </html>
     ''', files=files)
@@ -60,14 +114,61 @@ def upload_file():
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Upload new File</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                text-align: center;
+            }
+            .container {
+                max-width: 800px;
+                margin: 50px auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h1 {
+                color: #333;
+            }
+            form {
+                margin: 20px 0;
+            }
+            input[type="file"] {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            input[type="submit"] {
+                padding: 10px 20px;
+                border: none;
+                background-color: #28a745;
+                color: #fff;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #218838;
+            }
+            a {
+                text-decoration: none;
+                color: #007bff;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
     </head>
     <body>
-        <h1>Upload new File</h1>
-        <form method=post enctype=multipart/form-data>
-            <input type=file name=file>
-            <input type=submit value=Upload>
-        </form>
-        <a href="/">Home</a>
+        <div class="container">
+            <h1>Upload new File</h1>
+            <form method=post enctype=multipart/form-data>
+                <input type=file name=file>
+                <input type=submit value=Upload>
+            </form>
+            <a href="/">Home</a>
+        </div>
     </body>
     </html>
     '''
