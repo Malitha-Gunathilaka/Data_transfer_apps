@@ -8,6 +8,8 @@ This project is a simple file transfer web application built using Python Flask.
 - Download files from the server to your mobile phone.
 - Supports various file types including images, videos, documents, and more.
 - Simple and clean user interface with basic CSS styling.
+- **Multiple File Upload**: Upload multiple files simultaneously to the server.
+- **Delete File**: Delete files from the server directly through the web interface.
 
 ## Requirements
 
