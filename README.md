@@ -42,4 +42,13 @@ This project is a simple file transfer web application built using Python Flask.
 3. Use the web interface to upload and download files.
 
 
+## Screenshots
+
+### Screenshot 1
+![Screenshot showing PC interface]([https://github.com/username/repository/blob/main/screenshot1.png](https://github.com/Malitha-Gunathilaka/Data_transfer_apps/blob/main/Screenshot%20PC%20.png))
+
+### Screenshot 2
+![Screenshot showing Mobile Phone]([https://github.com/username/repository/blob/main/screenshot2.png](https://github.com/Malitha-Gunathilaka/Data_transfer_apps/blob/main/Screenshot_Mobile%20phone.jpg))
+
+
 
