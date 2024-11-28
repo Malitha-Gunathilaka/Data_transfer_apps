@@ -39,7 +39,7 @@ This project is a simple file transfer web application built using Python Flask.
    DataTransfer.py
     ```
 
-2. Access the app from your mobile device by navigating to `http://<your_pc_ip>:5000`, replacing `<your_pc_ip>` with the IP address of your PC. Both the PC and mobile device should be on the same Wi-Fi network.
+2. Access the app from your mobile device by navigating to `http://192.168.1.32:5000`, replacing `<your_pc_ip>` with the IP address of your PC. Both the PC and mobile device should be on the same Wi-Fi network.
 
 3. Use the web interface to upload and download files.
 
